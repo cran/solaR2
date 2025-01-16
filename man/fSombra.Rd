@@ -62,7 +62,10 @@ fSombraEst(angGen, distances,struct)
   \code{\link{calcShd}}, \code{\link{optimShd}}, \code{\link{fTheta}}, \code{\link{calcSol}}
 }
 \examples{
-lat = 37.2;
+library("data.table")
+\dontshow{setDTthreads(2)}
+
+lat <- 37.2;
 sol <- calcSol(lat, fBTd(mode = 'prom'), sample = '10 min', keep.night = FALSE)
 angGen <- fTheta(sol, beta = 35);
 Angles <- merge(as.data.tableI(sol), angGen)

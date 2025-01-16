@@ -56,6 +56,9 @@ NmgPVPS(pump, Pg, H, Gd, Ta = 30,
 \seealso{\code{\link{fPump}}, \code{\link{prodPVPS}}, \code{\link{pumpCoef}}}
 
 \examples{
+library("data.table")
+\dontshow{setDTthreads(2)}
+
 Pg = seq(4000, 8000,by = 100);
 H = seq(120, 150,by = 5);
 

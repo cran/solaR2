@@ -43,6 +43,9 @@ P2E(x, by)
 }
 
 \examples{
+library("data.table")
+\dontshow{setDTthreads(2)}
+
 char2diff('min')
 char2diff('2 s')
 

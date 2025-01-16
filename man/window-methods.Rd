@@ -43,8 +43,11 @@
   \code{\link{indexD}}
 }
 \examples{
-lat = 37.2
-sol = calcSol(lat, BTd = fBTd(mode = 'serie'))
+library("data.table")
+\dontshow{setDTthreads(2)}
+
+lat <- 37.2
+sol <- calcSol(lat, BTd = fBTd(mode = 'serie'))
 range(indexD(sol))
 
 start <- as.Date(indexD(sol)[1])

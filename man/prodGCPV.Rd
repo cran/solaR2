@@ -125,8 +125,8 @@ prodGCPV(lat,
   \code{\link{mergesolaR}}
 }
 \examples{
-library(lattice)
-library(latticeExtra)
+library("data.table")
+\dontshow{setDTthreads(2)}
 
 lat <- 37.2;
 

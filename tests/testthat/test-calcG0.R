@@ -28,7 +28,7 @@ test_that('irradiation and irradiance on the horizontal plane',{
 })
 
 set.seed('555')
-g0 <- calcG0(lat, dataRad = G0dm, modeRad = 'aguiar')
+g0 <- calcG0(lat, dataRad = list(G0dm = G0dm, year = 2024), modeRad = 'aguiar')
 g0I <- as.data.tableI(g0)
 g0D <- as.data.tableD(g0)
 g0M <- as.data.tableM(g0)

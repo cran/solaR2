@@ -43,8 +43,8 @@ HQCurve(pump)
 }
 
 \examples{
-library(lattice)
-library(latticeExtra)
+library("data.table")
+\dontshow{setDTthreads(2)}
 
 data(pumpCoef)
 

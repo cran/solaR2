@@ -100,6 +100,9 @@ zoo2Meteo(file, lat, source = '')
   \code{\link{readG0dm}}.
 }
 \examples{
+library("data.table")
+\dontshow{setDTthreads(2)}
+
 data(helios)
 names(helios) = c('Dates', 'G0d', 'TempMax', 'TempMin')
 

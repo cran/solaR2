@@ -47,6 +47,9 @@ fBTd(mode = "prom",
 }
 
 \examples{
+library("data.table")
+\dontshow{setDTthreads(2)}
+
 #Average days
 fBTd(mode = 'prom')
 
